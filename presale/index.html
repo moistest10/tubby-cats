@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  -->
+    <title>Tubby Cats</title>
+    <link rel="shortcut icon" href="img/tubbylogo.png">
+
+    <meta name="description" content="Tubby Cats" data-react-helmet="true" />
+    <meta name="description" content="Tubby Cats" data-react-helmet="true">
+    <meta content="🚨 ➥ CLICK HERE TO MINT! ✅" property="og:title">
+    <meta content="
+
+    🎉 Public sale is LIVE!
+
+    🏷️Sale Info
+    ▶ Mint Price: 0.1 ETH
+    ▶ Supply: 20,000
+
+    ❗ Connect to check if you are eligible.
+
+    🎀 𝐓𝐡𝐚𝐧𝐤 𝐲𝐨𝐮 for supporting Tubby Cats❢ 🎀"
+    property="og:description">
+    <meta content='https://pbs.twimg.com/profile_banners/1125894854431707136/1640211988/600x200' property='og:image'>
+    <meta name="twitter:card" content="summary_large_image">
+	<link type="application/json+oembed" href="embed.json"/>
+
+
+
+    <meta content="#D976AD" data-react-helmet="true" name="theme-color">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="theme-color" content="#D976AD">
+    <!-- -->
+
+    <link rel="stylesheet" href="css/halfmoon.min.css">
+    <link rel="stylesheet" href="css/halfmoon-variables.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+
+
+
+</head>
+
+<body class="">
+
+
+    <div class="wrapper">
+
+        <div class="mint-wrapper" style="color: white; text-align: center">
+            <p id="nftTitleName" class="sale-title"
+                style="line-height: 1.5; margin-block-start: 0; margin-block-end: 0; margin-bottom: 10px; font-size: 64px;">
+            </p>
+            <p class="sale-title" style="line-height: 1.5; margin-block-start: 0; margin-block-end: 0;">Public sale is LIVE</p>
+
+            <div class="whitelistwrapper" style="margin-bottom: 30px; margin-top: 30px;">
+                <p id="connecttocheck">Connect to check if you are Eligible to mint</p>
+                <div id="checkWhitelist" class="whitelist">
+                </div>
+                <p class="whitelist" style="margin-bottom: 40px;"><span id="iswhitelisted"></span></p>
+            </div>
+
+            <div class="row gap-20 mt-20">
+                <div class="col w-200">
+                    <div class="">Supply</div>
+                </div>
+                <div class="col w-200">
+                    <div class="">Price</div>
+                </div>
+                <div class="col w-200">
+                    <div class="">Max</div>
+                </div>
+            </div>
+
+            <div class="row gap-20 mt-5">
+                <div class="col w-200">
+                    <div class="font-size-18"><span id="supplyHeader"></span></div>
+                </div>
+                <div class="col w-200">
+                    <div class="font-size-18"><span id="priceHeader"></span> ETH</div>
+                </div>
+                <div class="col w-200">
+                    <div class="font-size-18"><span id="maxDisplay"></span> per Wallet</div>
+                </div>
+            </div>
+
+            <div class="row mint-details mt-20">
+                <div class="col flex-grow-0">
+                    <img class="nft-image" src="img/gif.gif" alt="" srcset="">
+                </div>
+                <div class="col text-align-right">
+                    <p class="price-nft-label">Price Per Tubby Cat</p>
+                    <p class="price-nft"><span id="priceMintDetails"></span> ETH Each</p>
+                </div>
+            </div>
+            <div class="quantity-wrapper mt-20">
+                <div id="minus" class="minuson">
+                    <svg width="12" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        style="left: 11px;">
+                        <path
+                            d="M15 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.7211C0.48043 1.89464 0.734784 2 1 2H15C15.2652 2 15.5196 1.89464 15.721 1.7211C15.8946 1.51957 16 1.26522 16 1C16 0.734784 15.8946 0.48043 15.721 0.292893C15.5196 0.105357 15.2652 0 15 0Z"
+                            fill="white"></path>
+                    </svg>
+                </div>
+                <h5 id="quantityDisplayOnly" style="margin-left: 12px; margin-right: 12px; margin-block: 0; color: white !important;">1</h5>
+                <input id="quantity" name="eth" class="eth_input text-field-5 w-input" type="hidden" min="1" max="20"
+                    pattern="[A-z0-9]{2,50}" minlength="2" maxlength="50" required="required" value="1">
+                <div id="plus" class="pluson">
+                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        style="left: 11px;">
+                        <path
+                            d="M15 7H9V1C9 0.734784 8.89464 0.48043 8.7211 0.292893C8.51957 0.105357 8.26522 0 8 0C7.73478 0 7.48043 0.105357 7.29289 0.292893C7.10536 0.48043 7 0.734784 7 1V7H1C0.734784 7 0.48043 7.10536 0.292893 7.29289C0.105357 7.48043 0 7.73478 0 8C0 8.26522 0.105357 8.51957 0.292893 8.7211C0.48043 8.89464 0.734784 9 1 9H7V15C7 15.2652 7.10536 15.5196 7.29289 15.721C7.48043 15.8946 7.73478 16 8 16C8.26522 16 8.51957 15.8946 8.7211 15.721C8.89464 15.5196 9 15.2652 9 15V9H15C15.2652 9 15.5196 8.89464 15.721 8.7211C15.8946 8.51957 16 8.26522 16 8C16 7.73478 15.8946 7.48043 15.721 7.29289C15.5196 7.10536 15.2652 7 15 7Z"
+                            fill="white"></path>
+                    </svg>
+                </div>
+                <h5 id="ape-max" class="setMax" style="font-weight: 600;">Set Max</h5>
+            </div>
+
+            <div id="ape-total">
+                <p>Total</p>
+                <h5><span id="price"></span> ETH</h5>
+            </div>
+            <button class="cta connect-btn" id="connect">Connect Wallet</button>
+            <button class="cta connect-btn mintbtn hide" id="mint">Mint</button>
+            <button class="cta connect-btn mintbtn hide" id="mintbonus"
+                style="margin-top: 30px; position: relative;"  onclick="mintNumber(3)">Mint 3 get 1 Free<span
+                    class="limited_badge">Limited</span></button>
+            <button class="cta disconnect-btn" id="disconnect"
+                style="display: none; visibility: none ;">Disconnect</button>
+            <div id="num" class="mt-10">
+                <p><span class="remainingQty" id="num_1"></span><span class="num_c"> / </span><span class="supplyFooter"
+                        id="num_2"></span> Sold</p>
+            </div>
+            <div style="display: none;" class="buttonorer container_metamask_content-btn">
+                <h2 class></h2>
+            </div>
+        </div>
+
+    </div>
+    <!-- <div class="BottomScroll" style=""><img src="/img/alltubbies.png" alt="TubbyCats" class="TubbyScrollImg"></div> -->
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="mintingModal" tabindex="-1" role="dialog" style="text-align: center !important;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="width: auto;">
+                <a href="#" class="close" role="button" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </a>
+                <h5 class="modal-title">Congratulations!</h5>
+                <p>
+                    Your <span id="nftName"></span> NFT is being prepared for you.
+                    <br>
+                    <br>
+                    You should be able to see it in OpenSea in the next few minutes.
+                </p>
+                <div class="eth-spinner mb-20">
+                    <img id="loadingSpinner" src="img/spinner.gif" alt="Spinner animation">
+                    <img style="width: 50px;" class="hide" id="completedCheckmark" src="img/checkmark.png"
+                        alt="Success">
+                </div>
+
+                <!-- <a id="completedButton" href="#" class="btn btn-lg btn-success mr-5 hide" role="button"
+                    onclick="halfmoon.toggleModal('mintingModal')">Completed</a> -->
+                <a id="completedButton" href="#" class="btn btn-lg btn-success mr-5 hide" role="button" onclick="mintNumber(5)">Mint 5 More and get a 1/1 Ultra Rare For Free</a>
+                <!-- <a href="#" class="btn btn-primary" role="button" onclick="halfmoon.toggleModal('mintingModal')">I understand</a> -->
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- End Modal -->
+
+    <!-- Alert On Error -->
+    <div class="sticky-alerts"></div>
+    <!-- End Alert On Error -->
+
+    <!-- Scripts -->
+    <script src="js/halfmoon.min.js"></script>
+
+    <!-- ETH      -->
+
+
+    <script src="../cdn.jsdelivr.net/gh/ethereum/web3.js%401.7.0/dist/web3.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+
+
+    <!-- Solana
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/index.iife.min.js"></script>
+    <script src="./js/main-sol.js"></script>
+
+     -->
+</body>
+
+
+</html>
